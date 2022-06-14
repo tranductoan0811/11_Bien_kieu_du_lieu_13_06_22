@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- Tính lãi suất ngân hàng_13_06_22 -->
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Tính lãi suất ngân hàng</title>
+
+  </head>
+
+  <body>
+  
+  </body>
+
+</html>
+
+<script>
+  let sotien, laisuat, sonam, tienlai1, tienlai;
+  sotien = +prompt("Nhập số tiền gửi vnd: ");
+  laisuat = +prompt("Nhập lãi suất :");
+  sonam = +prompt("Nhập số năm gửi tiền: ");
+  tienlai_1nam = sotien * (laisuat/100);
+  tiengoc_lai = sotien + (tienlai_1nam * sonam);
+
+  document.write("Số tiền gốc: " + (sotien.toLocaleString('en-US')) + " đồng, lãi suất : " + laisuat + " ( % / năm ). " + "<br>" + 
+  "Sau: " + sonam + " năm số tiền cả gốc lẫn lãi là: " + (tiengoc_lai.toLocaleString('en-US')) + " (đồng)");
+
+</script>
